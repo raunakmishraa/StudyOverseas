@@ -151,23 +151,23 @@ revealEls.forEach(el => revealObserver.observe(el));
 
 //   buildDots();
 
-  // Auto-play
-  let autoPlay = setInterval(() => goTo((currentIndex + 1) % totalSlides), 5000);
-  tslider.addEventListener('mouseenter', () => clearInterval(autoPlay));
-  tslider.addEventListener('mouseleave', () => {
-    autoPlay = setInterval(() => goTo((currentIndex + 1) % totalSlides), 5000);
-  });
+//   // Auto-play
+//   let autoPlay = setInterval(() => goTo((currentIndex + 1) % totalSlides), 5000);
+//   tslider.addEventListener('mouseenter', () => clearInterval(autoPlay));
+//   tslider.addEventListener('mouseleave', () => {
+//     autoPlay = setInterval(() => goTo((currentIndex + 1) % totalSlides), 5000);
+//   });
 
-  window.addEventListener('resize', () => {
-    const newVisible = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-    if (newVisible !== visibleCount) {
-      visibleCount = newVisible;
-      currentIndex = 0;
-      buildDots();
-      goTo(0);
-    }
-  });
-}
+//   window.addEventListener('resize', () => {
+//     const newVisible = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+//     if (newVisible !== visibleCount) {
+//       visibleCount = newVisible;
+//       currentIndex = 0;
+//       buildDots();
+//       goTo(0);
+//     }
+//   });
+// }
 
 // ---- Contact form -------------------------------------------
 const contactForm = document.getElementById('contactForm');
