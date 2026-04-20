@@ -1,7 +1,3 @@
-// ============================================================
-// Study Overseas — Main JavaScript
-// ============================================================
-
 // ---- Navbar scroll behaviour --------------------------------
 const navbar = document.getElementById('navbar');
 function handleNavScroll() {
