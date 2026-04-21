@@ -120,6 +120,12 @@
         border-radius: 3px;
       }
 
+      button:disabled {
+        background-color: #cccccc;
+        color: #666666;
+        cursor: not-allowed; /* Shows a 'no entry' cursor */
+      }
+
       /* ============================================================ BUTTONS */
       .btn {
         display: inline-flex;
@@ -1331,7 +1337,6 @@
     </style>
 </head>
   <body>
-
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
@@ -1980,7 +1985,7 @@
               </div>
               <div class="ci-item">
                 <div class="ci-icon">📧</div>
-                <div><strong>Email</strong><p>info@studyoverseas.edu.np</p></div>
+                <div><strong>Email</strong><p>info@studyoverseas.com.np</p></div>
               </div>
               <div class="ci-item">
                 <div class="ci-icon">🕐</div>
@@ -2102,7 +2107,7 @@
         });
       });
 
-      // ---- Active nav link on scroll ------------------------------
+      // ---- Form Button Disabled ------------------------------
       document.getElementById("msgButton").disabled = true;
 
       // ---- Active nav link on scroll ------------------------------
