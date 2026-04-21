@@ -1958,7 +1958,7 @@
                 <label for="cfMsg">Message (Optional)</label>
                 <textarea id="cfMsg" rows="4" placeholder="Tell us about your academic background or any questions..."></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-full" disabled>
+              <button id="msgButton" type="submit" class="btn btn-primary btn-full">
                 Send My Request
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
               </button>
@@ -2101,6 +2101,9 @@
           document.body.style.overflow = '';
         });
       });
+
+      // ---- Active nav link on scroll ------------------------------
+      document.getElementById("msgButton").disabled = true;
 
       // ---- Active nav link on scroll ------------------------------
       const sections = document.querySelectorAll('section[id]');
