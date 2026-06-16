@@ -948,9 +948,9 @@
       .process-section { background: var(--gray-50); }
       .process-steps {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: start;
-        gap: 0;
+        gap: 24px;
       }
       .ps-step {
         display: flex;
@@ -1297,7 +1297,7 @@
         .hero-subtitle { margin: 0 auto 32px; }
         .fc1, .fc2, .fc3 { display: none; }
         .country-grid { grid-template-columns: repeat(3, 1fr); }
-        .process-steps { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .process-steps { grid-template-columns: repeat(2, 1fr); gap: 16px; }
         .ps-arrow { display: none; }
         .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
         .why-layout { grid-template-columns: 1fr; gap: 48px; }
@@ -1327,7 +1327,7 @@
         .hero-actions { flex-direction: column; align-items: center; }
         .country-grid { grid-template-columns: 1fr; }
         .visa-grid { grid-template-columns: 1fr; }
-        .process-steps { grid-template-columns: 1fr 1fr; }
+        .process-steps { grid-template-columns: repeat(1, 1fr); }
         .footer-grid { grid-template-columns: 1fr; }
         .contact-form-wrap { padding: 24px 18px; }
         .ci-card { padding: 22px 18px; }
@@ -1799,41 +1799,42 @@
             <div class="ps-icon">💬</div>
             <h5>Free Counseling</h5>
             <p>Meet our experts to discuss your academic background, goals, and budget — completely free.</p>
+            <div class="ps-arrow">→</div>
           </div>
-          <div class="ps-arrow">→</div>
           <div class="ps-step reveal-up" style="--d:0.1s">
             <div class="ps-num">02</div>
             <div class="ps-icon">🎯</div>
             <h5>Profile Assessment</h5>
             <p>We evaluate your profile and identify the best universities and programs for your goals.</p>
+            <div class="ps-arrow">→</div>
           </div>
-          <div class="ps-arrow">→</div>
           <div class="ps-step reveal-up" style="--d:0.2s">
             <div class="ps-num">03</div>
             <div class="ps-icon">📖</div>
             <h5>Test Preparation</h5>
             <p>Join our IELTS, PTE, or Duolingo classes to meet language entry requirements.</p>
+            <div class="ps-arrow">→</div>
           </div>
-          <div class="ps-arrow">→</div>
           <div class="ps-step reveal-up" style="--d:0.3s">
             <div class="ps-num">04</div>
             <div class="ps-icon">📨</div>
             <h5>Application Filing</h5>
             <p>We prepare and submit compelling university applications with all required documents.</p>
+            <div class="ps-arrow">→</div>
           </div>
-          <div class="ps-arrow">→</div>
           <div class="ps-step reveal-up" style="--d:0.4s">
             <div class="ps-num">05</div>
             <div class="ps-icon">🛂</div>
             <h5>Visa Processing</h5>
             <p>Expert visa file preparation, embassy scheduling, and mock interview practice.</p>
+            <div class="ps-arrow">→</div>
           </div>
-          <div class="ps-arrow">→</div>
           <div class="ps-step reveal-up" style="--d:0.5s">
             <div class="ps-num">06</div>
             <div class="ps-icon">🌍</div>
             <h5>Fly &amp; Thrive</h5>
             <p>Pre-departure orientation, then take off with our continued post-arrival support.</p>
+            <div class="ps-arrow">→</div>
           </div>
         </div>
       </div>
@@ -1916,29 +1917,29 @@
         </div>
         <div class="contact-layout">
           <div class="contact-form-wrap reveal-up">
-            <form id="contactForm" novalidate>
+            <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBXbMophNotSQCaA8B6IxKPpP-jvBo3KZ-ccGSbNF0vnODcw/formResponse" method="post">
               <div class="cf-row">
                 <div class="cf-group">
                   <label for="cfFname">First Name</label>
-                  <input type="text" id="cfFname" placeholder="First name" required />
+                  <input type="text" id="cfFname" placeholder="First name" name="entry.243739278" required />
                 </div>
                 <div class="cf-group">
                   <label for="cfLname">Last Name</label>
-                  <input type="text" id="cfLname" placeholder="Last name" required />
+                  <input type="text" id="cfLname" placeholder="Last name" name="entry.1898945488" required />
                 </div>
               </div>
               <div class="cf-group">
                 <label for="cfEmail">Email Address</label>
-                <input type="email" id="cfEmail" placeholder="your@email.com" required />
+                <input type="email" id="cfEmail" placeholder="your@email.com" name="entry.1891435341" required />
               </div>
               <div class="cf-group">
                 <label for="cfPhone">Phone / WhatsApp</label>
-                <input type="tel" id="cfPhone" placeholder="+977 9765081721" required />
+                <input type="tel" id="cfPhone" placeholder="+977 9XXXXXXXXX" name="entry.2138685335" required />
               </div>
               <div class="cf-row">
                 <div class="cf-group">
                   <label for="cfCountry">Preferred Country</label>
-                  <select id="cfCountry">
+                  <select id="cfCountry" name="entry.1461539801">
                     <option value="">Select country</option>
                     <option>United Kingdom</option>
                     <option>United States</option>
@@ -1949,7 +1950,7 @@
                 </div>
                 <div class="cf-group">
                   <label for="cfService">Service Needed</label>
-                  <select id="cfService">
+                  <select id="cfService" name="entry.675795091">
                     <option value="">Select service</option>
                     <option>IELTS Preparation</option>
                     <option>PTE Preparation</option>
@@ -1961,7 +1962,7 @@
               </div>
               <div class="cf-group">
                 <label for="cfMsg">Message (Optional)</label>
-                <textarea id="cfMsg" rows="4" placeholder="Tell us about your academic background or any questions..."></textarea>
+                <textarea id="cfMsg" rows="4" placeholder="Tell us about your academic background or any questions..." name="entry.870258933"></textarea>
               </div>
               <button id="msgButton" type="submit" class="btn btn-primary btn-full">
                 Send My Request
@@ -2089,6 +2090,12 @@
       window.addEventListener('scroll', handleNavScroll, { passive: true });
       handleNavScroll();
 
+      function handleSubmit(event) {
+        event.preventDefault();         
+        console.log("Form is being submitted!");        
+        document.getElementById("myForm").submit(); 
+      }
+
       // ---- Hamburger / mobile menu --------------------------------
       const hamburger = document.getElementById('hamburger');
       const mobileMenu = document.getElementById('mobileMenu');
@@ -2107,8 +2114,6 @@
         });
       });
 
-      // ---- Form Button Disabled ------------------------------
-      document.getElementById("msgButton").disabled = true;
 
       // ---- Active nav link on scroll ------------------------------
       const sections = document.querySelectorAll('section[id]');
@@ -2258,9 +2263,16 @@
       if (contactForm) {
         contactForm.addEventListener('submit', e => {
           e.preventDefault();
+          contactForm.submit();
           const btn = contactForm.querySelector('button[type="submit"]');
           btn.disabled = true;
           btn.innerHTML = '<span>Sending…</span>';
+          window.location.href = 'https://www.studyoverseas.edu.np';
+          fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            mode: 'no-cors'
+          }).catch(error => console.error('Error:', error));
           setTimeout(() => {
             btn.innerHTML = 'Send My Request <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
             btn.disabled = false;
